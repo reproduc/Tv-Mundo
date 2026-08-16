@@ -183,7 +183,7 @@ function attemptReconnection() {
         function reconnect() {
             if (retries < maxRetries) {
                 console.log(`Intentando reconectar... (Intento ${retries + 1})`);
-                player.src({ type: 'application/x-mpegURL', src: "https://live2.eu-north-1b.cf.dmcdn.net/sec2(ieoDnVOajRciGGBlxzUUjPR-hqhiHqSwIsYVFF0olMoxz80kn4JpCrCuSHIVEmWxKqWSBmOKAvJ1UoMywnD8_vh7AYOpSwGRyeDIZBM9EUmASjeDX40RfDAerpNvkjLA)/cloud/3/x9s3ad6/s/live-720.m3u8" });
+                player.src({ type: 'application/x-mpegURL', src: "https://rtmp.eliniktech.com/TvMundo/video.m3u8" });
                 player.load();
                 player.play().catch(function() {
                     retries++;
@@ -237,3 +237,17 @@ function attemptReconnection() {
 </script>
 </body>
 </html>
+    <footer style="display:grid;align-content:end">
+        <div style="background-color:#000000;color:#fff;text-align:center;padding:5px">
+            ©<a href="http://wa.me/51992377712">Copyright 2015-2026 - Desarrollado por Jc</a>
+        </div>
+        <script>
+            $(".mobile-nav-toggle").click(function () {
+                $("body").toggleClass("mobile-nav-active");
+                $(".mobile-nav-toggle i").toggleClass("fa-bars fa-times");
+            });
+        </script>
+    </footer>
+
+
+</body>
